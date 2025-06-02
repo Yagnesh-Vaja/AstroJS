@@ -20,7 +20,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-
 /* nav styles */
 .hamburger {
   padding-right: 20px;
@@ -54,7 +53,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+a:focus {
   background-color: #ff9776;
 }
 
@@ -79,4 +79,13 @@ h1 {
   .hamburger {
     display: none;
   }
+}
+
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }

@@ -1,6 +1,6 @@
 ---
 // src/pages/about.astro
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
 
@@ -14,19 +14,20 @@ const identity = {
 const skills = ["HTML", "CSS", "Javascript", "Astro"];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = "navy";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   <h2>... and my new Astro site!</h2>
 
   <p>
-    I am working through Astro's introductory tutorial. This is the second
-    page on my website, and it's the first one I built myself!
+    I am working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I built myself!
   </p>
 
   <p>
@@ -42,7 +43,9 @@ const textCase = "uppercase";
     </li>
     {
       identity.hobbies.length >= 2 && (
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
       )
     }
   </ul>
